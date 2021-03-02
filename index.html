@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<title>Portfolio</title>
+</head>
+<body>
+	<section>
+	<div class="container">
+		<div class="mypiccont">
+			<img class="mypic" src="pic47.jpg"> <br>
+		<h5>Veni Gonzales</h5>
+		<h6>PASIG CITY, PH</h6>
+		</div>
+
+	<div class="container2">
+		<div class="btncont">
+			<button class="tablink" onclick="openInfo('about', this, '#013E4F')" id="defaultOpen">About me</button>
+			<button class="tablink" onclick="openInfo('tskills', this, '#5A004C')">Technical Skills</button>
+			<button class="tablink" onclick="openInfo('projects', this, '#607A00')">Projects</button>
+			<button class="tablink" onclick="openInfo('sskills', this, '#D56C00')">Soft Skills</button>
+			<button class="tablink" onclick="openInfo('pbg', this, '#6E002B')">Work History</button>
+			<button class="tablink" onclick="openInfo('contact', this, '#021F55')"> Contact</button>
+		</div>
+
+		<div class="tabcontainer">
+			<div id="about" class="tabcontent">
+			  <h3>About me</h3>
+			  <p>I like making things pretty and useful.</p>
+			</div>
+
+			<div id="tskills" class="tabcontent">
+			  <h3>Technical Skills</h3>
+			  <p><strong>Technical Skills and Knowledge</strong></p>
+			  <ul>
+			  	<li>HTML5, CSS, JavaScript</li>
+			  </ul>
+			</div>
+
+			<div id="sskills" class="tabcontent">
+			  <h3>Soft Skills</h3>
+			  <p><strong>Other Skills and Certifications</strong></p>
+			  <ul>
+			  	<li>Microsoft Tools; Excel, Word, PPT</li>
+			  	<li>GSuite Tools; Sheets, Docs, Slides</li>
+			  	<li>Mainframe; TSO</li>
+			  	<li>Six Sigma Yellow Belt and Green Belt Certified</li>
+			  </ul>
+				<p><strong>Education</strong></p>
+				<ul>
+					<li>Asia Pacific College | Bachelor of Science in Information Technology (2015 – Present)</li>
+					<li>National College of Business and Arts | Bachelor of Science in Accounting (2006-2008)</li>
+				</ul>
+			</div>
+
+			<div id="projects" class="tabcontent">
+			  <h3>My Projects</h3>
+			  <br>
+			  	<div class="slider">
+					  <a href="#slide-1">1</a>
+					  <a href="#slide-2">2</a>
+					  <a href="#slide-3">3</a>
+					  <a href="#slide-4">4</a>
+					  <a href="#slide-5">5</a>
+
+					  <div class="slides">
+					    <div id="slide-1">
+					    	<!-- insert image of project -->
+					      Project 1
+					    </div>
+
+					    <div id="slide-2">
+					      Project 2
+					    </div>
+					    <div id="slide-3">
+					      Project 3
+					    </div>
+					    <div id="slide-4">
+					      Project 4
+					    </div>
+					    <div id="slide-5">
+					      Project 5
+					    </div>
+					  </div>
+				</div>
+			</div>
+
+			<div id="pbg" class="tabcontent">
+			  <h3>Professional Background</h3>
+			  <p><strong>TELUS International Philippines | Total Duration: 10 years 11 months </strong> <br>
+				<strong>Role: Billing Specialist </strong>| Jul 2017 – Present (2 years and 6 mos.)<br></p>
+				<ul>
+					<li>Provides technical assistance, coaching and feedback</li>
+				</ul>
+
+				<p><strong>Role: Billing Analyst </strong>| Aug 2014 – Jul 2017 (3 years)<br></p>
+				<ul>
+					<li>SME / POC</li>
+				</ul>
+
+				<p><strong>Role: Customer Service Representative </strong>| Mar 2009 – Aug 2014 (5 years and 6 mos.)<br></p>
+				<ul>
+					<li>SME in ADSL/POTS Order Entry for Business Customers</li>
+				</ul>
+
+				<p><strong>PRIMAL Enterprises Corporation</strong> <br>
+				2 months internship as Accounting clerk (2008)<br>
+
+			</div>
+
+			<div id="contact" class="tabcontent">
+			  <h3>Contact</h3>
+			  <p>Contact details.</p>
+			</div>
+			</div>
+	</div>
+	</div>	
+	</section>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
