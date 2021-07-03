@@ -6,13 +6,13 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-	<title>Portfolio</title>
+	<title>Veni Gonzales | Portfolio</title>
 </head>
 <body>
 	<section>
 	<div class="container">
 		<div class="mypiccont">
-			<img class="mypic" src="pic47.jpg"> <br>
+			<img class="mypic" src="images/pic47.jpg"> <br>
 		<h5>Veni Gonzales</h5>
 		<h6>PASIG CITY, PH</h6>
 		</div>
@@ -21,8 +21,8 @@
 		<div class="btncont">
 			<button class="tablink" onclick="openInfo('about', this, '#013E4F')" id="defaultOpen">About me</button>
 			<button class="tablink" onclick="openInfo('tskills', this, '#5A004C')">Technical Skills</button>
-			<button class="tablink" onclick="openInfo('projects', this, '#607A00')">Projects</button>
-			<button class="tablink" onclick="openInfo('sskills', this, '#D56C00')">Soft Skills</button>
+			<!-- <button class="tablink" onclick="openInfo('projects', this, '#607A00')">Projects</button> -->
+			<button class="tablink" onclick="openInfo('sskills', this, '#D56C00')">Soft Skills and Certificates</button>
 			<button class="tablink" onclick="openInfo('pbg', this, '#6E002B')">Work History</button>
 			<button class="tablink" onclick="openInfo('contact', this, '#021F55')"> Contact</button>
 		</div>
@@ -30,14 +30,18 @@
 		<div class="tabcontainer">
 			<div id="about" class="tabcontent">
 			  <h3>About me</h3>
-			  <p>I like making things pretty and useful.</p>
+			  <p class="mt-3">I like making things pretty and useful.</p>
 			</div>
 
 			<div id="tskills" class="tabcontent">
 			  <h3>Technical Skills</h3>
 			  <p><strong>Technical Skills and Knowledge</strong></p>
-			  <ul>
-			  	<li>HTML5, CSS, JavaScript</li>
+			  <ul class="mt-3">
+			  	<li>HTML5</li>
+					<li>CSS</li>
+					<li>Bootstrap, Tachyons, Tailwinds, Toastr</li>
+					<li>JavaScript</li>
+					<li>PHP</li>
 			  </ul>
 			</div>
 
@@ -55,9 +59,39 @@
 					<li>Asia Pacific College | Bachelor of Science in Information Technology (2015 – Present)</li>
 					<li>National College of Business and Arts | Bachelor of Science in Accounting (2006-2008)</li>
 				</ul>
+
+				<h3 class="mt-5">Certificates</h3>
+				<h6>Online Learning</h6>
+			  <br>
+			  	<div class="slider">
+					  <a href="#slide-1">1</a>
+					  <a href="#slide-2">2</a>
+					  <a href="#slide-3">3</a>
+					  <a href="#slide-4">4</a>
+					  <a href="#slide-5">5</a>
+
+					  <div class="slides">
+					    <div id="slide-1">
+					    	<img class="cert" src="images/certs/udemy1.jpg" alt="The Complete Web Developer in 2021: Zero to Mastery">
+					    </div>
+
+					    <div id="slide-2">
+					      <img class="cert" src="images/certs/udemy2.jpg" alt="Interactive JavaScript DOM">
+					    </div>
+					    <div id="slide-3">
+					      <img class="cert" src="images/certs/udemy3.jpg" alt="SQL for Data Analysis">
+					    </div>
+					    <div id="slide-4">
+					      <img class="cert" src="images/certs/udemy4.jpg" alt="Git Crash Course">
+					    </div>
+					    <div id="slide-5">
+					      <img class="cert" src="images/certs/udemy5.jpg" alt="HTML5 Essentials">
+					    </div>
+					  </div>
+				</div>
 			</div>
 
-			<div id="projects" class="tabcontent">
+			<!-- <div id="projects" class="tabcontent">
 			  <h3>My Projects</h3>
 			  <br>
 			  	<div class="slider">
@@ -69,7 +103,7 @@
 
 					  <div class="slides">
 					    <div id="slide-1">
-					    	<!-- insert image of project -->
+					    	insert image of project
 					      Project 1
 					    </div>
 
@@ -87,12 +121,12 @@
 					    </div>
 					  </div>
 				</div>
-			</div>
+			</div> -->
 
 			<div id="pbg" class="tabcontent">
 			  <h3>Professional Background</h3>
 			  <p><strong>TELUS International Philippines | Total Duration: 10 years 11 months </strong> <br>
-				<strong>Role: Billing Specialist </strong>| Jul 2017 – Present (2 years and 6 mos.)<br></p>
+				<strong>Role: Billing Specialist </strong>| Jul 2017 – Present (4 years)<br></p>
 				<ul>
 					<li>Provides technical assistance, coaching and feedback</li>
 				</ul>
@@ -113,8 +147,9 @@
 			</div>
 
 			<div id="contact" class="tabcontent">
-			  <h3>Contact</h3>
-			  <p>Contact details.</p>
+			  <h3>Contact Details</h3>
+			  <p class="mt-3">Mobile no: +63929-437-9460</p>
+				<p>Email: venidigonzales@rocketmail.com</p>
 			</div>
 			</div>
 	</div>
